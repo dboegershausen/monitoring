@@ -1,0 +1,10 @@
+version: "3"
+services:
+  monitoring:
+    image: monitoring:0.0.1
+    ports:
+      - 8081:8081
+    networks:
+      - application
+networks:
+  application:
